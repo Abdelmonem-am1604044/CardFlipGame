@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Country Guessing Game</title>
+    <script src="JS/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Coiny|Indie+Flower" rel="stylesheet">
+
+</head>
+<body>
+<div class="labels">
+    <label id="triesLabel"># Tries: <span id="tries">0</span></label>
+    <label id="score"></label>
+    <label id="guessesLabel"># Right Guesses: <span id="right">0</span></label>
+</div>
+<div class="container">
+    <div id="images"></div>
+</div>
+<div class="button-farm">
+    <p>Choose A Game Style</p>
+    <button onclick="display(6),setTimeout(flip, 3000)">12 Flags</button>
+    <button onclick="display(8),setTimeout(flip, 4000)">16 Flags</button>
+    <button onclick="display(10),setTimeout(flip, 5000)">20 Flags</button>
+</div>
+<script src="JS/script.js"></script>
+</body>
+</html>
